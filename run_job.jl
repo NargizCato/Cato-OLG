@@ -176,7 +176,7 @@ function main(arg::AbstractString)
         ss_reform = solve_steady_state(build_params(par_spec);
                                        benefit_fn = benefit_fn, aime_modifier = modifier)
 
-        b, r = extract_ss_ratios(ss), extract_ss_ratios(ss_reform; benefit_fn = benefit_fn)
+        b, r = extract_ss_ratios(ss), extract_ss_ratios(ss_reform)
         @printf("benefit/retiree: %.4f -> %.4f   taxable payroll: %.4f -> %.4f\n",
                 b.ss_ben_per_retiree, r.ss_ben_per_retiree,
                 b.taxable_payroll,    r.taxable_payroll)
