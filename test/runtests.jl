@@ -24,4 +24,5 @@ include(joinpath(@__DIR__, "helpers.jl"))
     include(joinpath(@__DIR__, "test_household.jl"))
     include(joinpath(@__DIR__, "test_projection.jl"))
     include(joinpath(@__DIR__, "test_run_job.jl"))
+    include(joinpath(@__DIR__, "test_aws.jl"))
 end
